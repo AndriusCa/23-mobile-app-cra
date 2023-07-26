@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import logo from "../../assets/img/organic.png";
+import style from "../../App.module.css";
 
 export function Feature1() {
   return (
-    <div>
+    <div className={style.app}>
       <Link to="/register">
         Skip
       </Link>
