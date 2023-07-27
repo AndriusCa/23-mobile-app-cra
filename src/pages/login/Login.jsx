@@ -1,16 +1,12 @@
 import { Link } from "react-router-dom";
 import { Button } from "../../components/button/Button";
-import style from "../register/Form.module.css";
+import style from "../../pages/register/Form.module.css";
 
-export function Register() {
+export function Login() {
   return (
     <div className={style.formBase}>
-      <h1>Create your account</h1>
-      <form >
-        <div className={style.row}>
-          <label htmlFor="name">Name</label>
-          <input id="name" type="text" placeholder="Name" />
-        </div>
+      <h1>Log in to your account</h1>
+      <form>
         <div className={style.row}>
           <label htmlFor="email">Email</label>
           <input id="email" type="text" placeholder="Email" />
@@ -20,12 +16,12 @@ export function Register() {
           <input id="password" type="text" placeholder="Password" />
         </div>
         <div className={style.row}>
-          <Link to="/">
-            <Button text="Register" />
+          <Link to="/loggedIn">
+            <Button text="Login" />
           </Link>
           <p>or</p>
-          <Link to="/login">
-            <Button text="Login" />
+          <Link to="/register">
+            <Button text="Register" />
           </Link>
         </div>
       </form>
