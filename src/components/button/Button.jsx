@@ -4,9 +4,9 @@ import style from "../button/Button.module.css"
 export function Button({ text }) {
   return (
     <div className={style.buttonGroup}>
-      <a className={style.button} href="/">
+      <button className={style.button}>
         {text}
-      </a>
+      </button>
     </div>
   )
 };

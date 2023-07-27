@@ -1,0 +1,11 @@
+.terms {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.terms a {
+  text-decoration: none;
+}
