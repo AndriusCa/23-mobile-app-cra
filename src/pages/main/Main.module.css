@@ -1,0 +1,21 @@
+.main {
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+}
+
+.mainLogo {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.main h1 {
+  padding-bottom: 3rem;
+  font-size: 1.5rem;
+}
+
+.main a {
+  text-decoration: none;
+}

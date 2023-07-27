@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import style from "./App.module.css";
+import "./App.css";
 import { Main } from "./pages/main/Main";
 import { Page404 } from "./pages/page404/Page404";
 import { Feature1 } from "./pages/feature/Feature1";
