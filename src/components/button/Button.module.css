@@ -1,9 +1,13 @@
 .button { 
-  padding: 1rem 3rem;
   background-color: #B2F2BB;
   color: #000;
-  text-decoration: none;
   font-size: 1rem;
   border: 0.1em solid #000;
   border-radius: 0.5rem;
+  user-select: none;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
