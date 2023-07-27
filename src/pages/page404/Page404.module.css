@@ -1,0 +1,20 @@
+.page404 {
+    display: flex;
+    padding: 4rem;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+}
+
+.page404 h1 {
+  padding-bottom: 1rem;
+  font-size: 4rem;
+}
+
+.page404 p {
+  font-size: 2rem;
+}
+
+.page404 a {
+  text-decoration: none;
+}
