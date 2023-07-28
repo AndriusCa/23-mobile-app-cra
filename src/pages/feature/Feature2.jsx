@@ -13,9 +13,7 @@ export function Feature2() {
       <h1>Feature2</h1>
       <p>Lorem ipsum dolor sit amet consectetur.</p>
       <div>
-        <Link>
-          <NavDots />
-        </Link>
+        <NavDots />
       </div>
       <Link to="/feature3">
         <Button text="Continue" />

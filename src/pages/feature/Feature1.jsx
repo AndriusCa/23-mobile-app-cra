@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
 import { Button } from "../../components/button/Button";
 import { NavDots } from "../../components/navDots/NavDots";
 import { Skip } from "../../components/skip/Skip";
@@ -13,9 +13,7 @@ export function Feature1() {
       <h1>Feature1</h1>
       <p>Lorem ipsum dolor sit amet consectetur.</p>
       <div>
-        <Link>
-          <NavDots />
-        </Link>
+        <NavDots />
       </div>
       <Link to="/feature2">
         <Button text="Continue" />

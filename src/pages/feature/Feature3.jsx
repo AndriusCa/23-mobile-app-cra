@@ -7,17 +7,15 @@ import style from "../feature/Feature.module.css";
 
 export function Feature3() {
   return (
-      <div className={style.feature}>
-        <Skip />
-        <img className={style.featureImg} src={logo} alt="freshProduce" />
-        <h1>Feature3</h1>
-        <p>Lorem ipsum dolor sit amet consectetur.</p>
-        <div>
-          <Link>
-            <NavDots />
-          </Link>
-        </div>
-        <Link to="/register">
+    <div className={style.feature}>
+      <Skip />
+      <img className={style.featureImg} src={logo} alt="freshProduce" />
+      <h1>Feature3</h1>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+      <div>
+        <NavDots />
+      </div>
+      <Link to="/register">
         <Button text="Register" />
       </Link>
     </div>
