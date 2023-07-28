@@ -37,7 +37,7 @@ const login = (email, password) => {
       try {
         await login(email, password)
         window.localStorage.setItem("isLoggedIn", "true")
-        navigate("/loggedIn")
+        navigate("/contentpage")
       } catch {
         setError("Invalid credentials")
       }
