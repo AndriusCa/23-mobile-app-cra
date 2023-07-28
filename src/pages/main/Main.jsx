@@ -13,12 +13,17 @@ const checkUserVisit = useCallback(
   function (event) {
     event.preventDefault()
 
-    const visited = localStorage.getItem("visited")
-    if (visited !== null) {
-      navigate("/login")
+    const isLoggedIn = localStorage.getItem("isLoggedIn")
+    if (isLoggedIn === "true") {
+      navigate("/contentpage")
     } else {
-      localStorage.setItem("visited", "true")
-      navigate("/feature1")
+      const visited = localStorage.getItem("visited")
+      if (visited !== null) {
+        navigate("/login")
+      } else {
+        localStorage.setItem("visited", "true")
+        navigate("/feature1")
+      }
     }
   }, [navigate]);
 
