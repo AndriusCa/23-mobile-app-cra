@@ -7,6 +7,8 @@ import { Feature2 } from "./pages/feature/Feature2";
 import { Feature3 } from "./pages/feature/Feature3";
 import { Register } from "./pages/register/Register";
 import { Login } from "./pages/login/Login";
+import { TermAndCond } from "./pages/TermAndCond/TermAndCond";
+
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
         <Route path="/feature3" element={<Feature3 />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/termandcond" element={<TermAndCond />} />
         <Route path="*" element={<Page404 />} />
       </Routes>
     </BrowserRouter>
