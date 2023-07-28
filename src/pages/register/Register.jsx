@@ -117,7 +117,7 @@ export function Register() {
           <input onChange={updatePassword} value={password} id="password" type="password" placeholder="Password"/>
         </div>
         <div className={style.row}>
-          <label htmlFor="terms">Accept<Link to="/termandcond">Terms and Conditions</Link>
+          <label htmlFor="terms">Accept<Link to="/termandcond"> Terms and Conditions</Link>
           </label>
           <input onChange={updateCheckbox} checked={isChecked} id="terms" type="checkbox"/>
         </div>
