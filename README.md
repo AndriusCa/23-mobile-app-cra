@@ -24,6 +24,7 @@ Site published at: https://github.com/AndriusCa/23-mobile-app-cra
 -   register form
 -   icons
 -   content rendering
+-   app navigation
 -   saving data to local memory
 
 ## 🧰 Getting Started
@@ -63,6 +64,9 @@ Would like to run this project locally? Open terminal and follow these steps:
     npm start
     ```
 
+
+    
+
 ### 🧪 Running tests
 
 There is no tests for this project.
@@ -74,3 +78,68 @@ There is no tests for this project.
 ## ⚠️ License
 
 Distributed under the MIT License. See LICENSE.txt for more information.
+
+
+## How to use
+
+> **Register user**
+
+Fill form:
+
+```
+{
+    "name": "john"
+    "email": "john@johnatan.com"
+    "password": "secretpasword"
+}
+```
+
+Response if all goes well:
+
+```json
+{
+    "message": "Registration successful!"
+}
+```
+
+Response if any error:
+
+```json
+{
+    "Error message: You must accept the terms and conditions"
+    "Error message: Not suitable username"
+    "Error message: Invalid email format"
+    "Error message: User already exists"
+    "Error message: Password must contain at least one letter and one number"
+}
+```
+
+> **Login**
+
+Fill form:
+
+```
+{
+    "email": "john@johnatan.com"
+    "password": "secretpasword"
+}
+```
+
+Response if all goes well:
+
+```json
+{
+    "Redirects to content page"
+}
+```
+
+Response if any error:
+
+```json
+{
+    "Error message: Please fill in all fields"
+    "Error message: Invalid credentials"
+}
+```
+
+
