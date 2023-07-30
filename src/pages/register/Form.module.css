@@ -10,7 +10,7 @@
 }
 
 .error {
-    width: 80%;
+    width: 85%;
     padding: 0.5rem;
     font-size: 1rem;
     color:red;
@@ -19,6 +19,8 @@
 
 .error.show {
     display: flex;
+    align-content: flex-end;
+    flex-wrap: wrap;
     flex-direction: column;
 
 }

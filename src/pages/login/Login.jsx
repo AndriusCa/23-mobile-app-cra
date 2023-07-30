@@ -45,26 +45,38 @@ const login = (email, password) => {
   };
 
    return (
-    <div className={style.formBase}>
-      <h1>Log in to your account</h1>
-      <form onSubmit={handleLogin}>
-        <div className={style.row}>
-          <label htmlFor="email">Email</label>
-          <input id="email" type="text" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
-        </div>
-        <div className={style.row}>
-          <label htmlFor="password">Password</label>
-          <input id="password" type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
-        </div>
-        {error && <p>{error}</p>}
-        <div className={style.row}>
-          <Button type="submit" text="Login" />
-          <p>or</p>
-          <Link to="/register">
-            <Button text="Register" />
-          </Link>
-        </div>
-      </form>
-    </div>
-  )
+     <div className={style.formBase}>
+       <h1>Log in to your account</h1>
+       <form onSubmit={handleLogin}>
+         <div className={style.row}>
+           <label htmlFor="email">Email</label>
+           <input
+             id="email"
+             type="text"
+             placeholder="Email"
+             value={email}
+             onChange={(e) => setEmail(e.target.value)}
+           />
+         </div>
+         <div className={style.row}>
+           <label htmlFor="password">Password</label>
+           <input
+             id="password"
+             type="password"
+             placeholder="Password"
+             value={password}
+             onChange={(e) => setPassword(e.target.value)}
+           />
+         </div>
+         <div>{error && <p style={{ color: 'red', display: 'flex', justifyContent: 'center' }}>{error}</p>}</div>
+         <div className={style.row}>
+           <Button type="submit" text="Login" />
+           <p>or</p>
+           <Link to="/register">
+             <Button text="Register" />
+           </Link>
+         </div>
+       </form>
+     </div>
+   )
 };
