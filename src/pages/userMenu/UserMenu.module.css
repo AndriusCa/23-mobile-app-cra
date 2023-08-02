@@ -1,0 +1,25 @@
+.menu {
+  position:fixed;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  background-color: #CFE;
+  opacity: 95%;
+  padding: 2rem 1rem;
+  flex-direction: column;
+  border-radius: 10px;
+  gap: 1rem;
+  right: 1rem;
+  top: 4rem;
+  display: none;
+}
+
+.active {
+  display: flex;
+  width: 90%;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+}

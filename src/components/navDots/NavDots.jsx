@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import { BiCircle } from "react-icons/bi"
-import style from "../../pages/feature/Feature.module.css"
+import { BiCircle } from "react-icons/bi";
+import style from "../../pages/feature/Feature.module.css";
 
 export function NavDots() {
   const navigate = useNavigate();

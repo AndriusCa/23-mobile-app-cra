@@ -9,6 +9,7 @@ import { Register } from "./pages/register/Register";
 import { Login } from "./pages/login/Login";
 import { TermAndCond } from "./pages/TermAndCond/TermAndCond";
 import { ContentPage } from "./pages/contentPage/ContentPage";
+import { AccLayout } from "../src/layout/AccLayout";
 
 
 function App() {
@@ -22,7 +23,11 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/termandcond" element={<TermAndCond />} />
-        <Route path="/contentpage" element={<ContentPage />} />
+
+        <Route Component={AccLayout}>
+          <Route path="/contentpage" element={<ContentPage />} />
+        </Route>
+
         <Route path="*" element={<Page404 />} />
       </Routes>
     </BrowserRouter>
